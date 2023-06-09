@@ -1,6 +1,6 @@
 //Lyrics Database
 let rockBeginnings1 = ["I wanna ", "Let's get ready and", "Tonight is the night to ", "We are in the mood to ", "You and I will ", "In this night we", "Now is the time to", "I will always "];
-let rockMiddles1 = ["rock with you ", "stay this way ", "rock", "love you "];
+let rockMiddles1 = ["rock with you ", "stay this way ", "rock ", "love you "];
 let rockEndings1 = ["and party all the time!", "forever!", "until the end of time!", "every night!"];
 let rockBeginnings2 = ["We are the "];
 let rockMiddles2 = ["light! ", "night! ", "best! ", "party! ", "rock! " ];
@@ -15,7 +15,27 @@ let generateLyricsButton = document.getElementById("generateLyrics");
 generateLyricsButton.addEventListener("click", generateLyrics);
 
 function generateLyrics() {
-  let numberOfLines = 
+  let numberOfLines = document.getElementById("numberOfLyrics").value;
+  let completeSong = [];
+  for (let i = 0; i < numberOfLines; i++) {
+    let randomNumber = Math.floor(Math.random() * 3);
+    let beginningOptions = rockLines[randomNumber][0].length;
+    let middleOptions = rockLines[randomNumber][1].length;
+    let endingOptions = rockLines[randomNumber][2].length;
+    let randomBeginning = Math.floor(Math.random() * beginningOptions);
+    let randomMiddle = Math.floor(Math.random() * middleOptions);
+    let randomEnding = Math.floor(Math.random() * endingOptions);
+    completeSong.push(rockLines[randomNumber][0][randomBeginning] + rockLines[randomNumber][1][randomMiddle] + rockLines[randomNumber][2][randomEnding]);
+    console.log(completeSong, randomNumber, randomBeginning, randomMiddle, randomEnding);
+  }
+  let songLength = completeSong.length;
+  let formattedSong = "";
+  for (let i=0; i < songLength; i++) {
+    let unformattedLine = completeSong[i];
+    let formattedLine = unformattedLine.charAt(0).toUpperCase() + unformattedLine.slice(1) + "<br>";
+    formattedSong += formattedLine;
+  }
+  document.getElementById("songContent").innerHTML = formattedSong;
 }
 
 //Clear Song
