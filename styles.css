@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Tilt+Prism&display=swap');
+
+body {
+  font-family: 'Monomaniac One', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  color: white;
+}
+
+header {
+  background-color: #4a0362;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: .2rem
+}
+
+main {
+  padding: 100px;
+  text-align: center;
+}
+
+form {
+  background-color: #3c323f;
+  padding: 20px 50px 50px;
+  text-align: left;
+  width: 70%;
+  max-width: 540px;
+  margin: auto;
+  letter-spacing: .1rem;
+  font-size: 18px;
+}
+
+form div {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+form input,
+form select {
+  background-color: #4a0362;
+  color: white;
+  padding: 10px;
+  font-family: 'Monomaniac One', sans-serif;
+  letter-spacing: .1rem;
+  font-size: 16px;
+}
+
+form h2 {
+  text-align: center;
+}
+
+footer {
+  background-color: #4a0362;
+  padding: 20px;
+  text-align: center;
+}
