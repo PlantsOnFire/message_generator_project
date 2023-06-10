@@ -1,5 +1,5 @@
-//Lyrics Database
-let rockBeginnings1 = ["I wanna ", "Let's get ready and", "Tonight is the night to ", "We are in the mood to ", "You and I will ", "In this night we ", "Now is the time to ", "I will always "];
+//Lyrics
+let rockBeginnings1 = ["I wanna ", "Let's get ready and ", "Tonight is the night to ", "We are in the mood to ", "You and I will ", "In this night we ", "Now is the time to ", "I will always "];
 let rockMiddles1 = ["rock with you ", "stay this way ", "rock ", "love you "];
 let rockEndings1 = ["and party all the time!", "forever!", "until the end of time!", "every night!"];
 let rockBeginnings2 = ["We are the ", "Be the ", "Believe in the ", "This is the ", "Now it's time for the "];
@@ -10,9 +10,14 @@ let rockMiddles3 = ["it's gonna be alright ", "the air is filled with romance ",
 let rockEndings3 = ["my Darling.", "my love.", "friends.", "everyone."];
 let rockLines = [[rockBeginnings1, rockMiddles1, rockEndings1], [rockBeginnings2, rockMiddles2, rockEndings2], [rockBeginnings3, rockMiddles3, rockEndings3]];
 
+//Titles
+let firstTitle = ["Purple ", "Red ", "Black ", "Dark ", "Silent ", "Metal ", "Heavy ", "Thunder ", "Dust ", "Devil ", "No Rest ", "Evil ", "Party "];
+let secondTitle = ["Rain", "Winds", "Heart", "Rising", "Devil", "Hell", "Motel", "Drive", "Rush"];
+
 //Generate Lyrics
 let generateLyricsButton = document.getElementById("generateLyrics");
 generateLyricsButton.addEventListener("click", generateLyrics);
+generateLyricsButton.addEventListener("click", generateTitle);
 
 function generateLyrics() {
   let numberOfLines = document.getElementById("numberOfLyrics").value;
@@ -38,10 +43,18 @@ function generateLyrics() {
   document.getElementById("songContent").innerHTML = formattedSong;
 }
 
+function generateTitle() {
+  let random1 = Math.floor(Math.random() * (firstTitle.length -1));
+  let random2 = Math.floor(Math.random() * (secondTitle.length -1));
+  let title = firstTitle[random1] + secondTitle[random2];
+  document.getElementById("songTitle").innerHTML = title;
+}
+
 //Clear Song
 let clearSongButton = document.getElementById("clearSong");
 clearSongButton.addEventListener("click", clearSong);
 
 function clearSong() {
   document.getElementById("songContent").innerHTML = "";
+  document.getElementById("songTitle").innerHTML ="";
 }
