@@ -2,7 +2,7 @@
 let rockBeginnings1 = ["I wanna ", "Let's get ready and", "Tonight is the night to ", "We are in the mood to ", "You and I will ", "In this night we", "Now is the time to", "I will always "];
 let rockMiddles1 = ["rock with you ", "stay this way ", "rock ", "love you "];
 let rockEndings1 = ["and party all the time!", "forever!", "until the end of time!", "every night!"];
-let rockBeginnings2 = ["We are the "];
+let rockBeginnings2 = ["We are the ", "Be the ", "Believe in the ", "This is the ", "Now it's time for the "];
 let rockMiddles2 = ["light! ", "night! ", "best! ", "party! ", "rock! " ];
 let rockEndings2 = ["And we're never gonna stop!", "So let's live it up!", "Shout it out loud!", "Make some noise!", "Stand your ground and shout!", "Let me hear you say it!"];
 let rockBeginnings3 = ["So now we say ", "Don't let me down! Because ", "She was like, ", "Have you heard that ", ""];
