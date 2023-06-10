@@ -1,5 +1,5 @@
 //Lyrics Database
-let rockBeginnings1 = ["I wanna ", "Let's get ready and", "Tonight is the night to ", "We are in the mood to ", "You and I will ", "In this night we", "Now is the time to", "I will always "];
+let rockBeginnings1 = ["I wanna ", "Let's get ready and", "Tonight is the night to ", "We are in the mood to ", "You and I will ", "In this night we ", "Now is the time to ", "I will always "];
 let rockMiddles1 = ["rock with you ", "stay this way ", "rock ", "love you "];
 let rockEndings1 = ["and party all the time!", "forever!", "until the end of time!", "every night!"];
 let rockBeginnings2 = ["We are the ", "Be the ", "Believe in the ", "This is the ", "Now it's time for the "];
