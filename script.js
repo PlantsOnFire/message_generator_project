@@ -43,5 +43,5 @@ let clearSongButton = document.getElementById("clearSong");
 clearSongButton.addEventListener("click", clearSong);
 
 function clearSong() {
-
+  document.getElementById("songContent").innerHTML = "";
 }
